@@ -25,9 +25,18 @@ export default function MenuClient() {
 
   return (
     <>
-      <div style={{ backgroundImage: "url('/chum01.PNG')",
-backgroundSize: "cover",
-backgroundPosition: "center", }}>
+     <div style={{
+  position: "relative",
+  minHeight: "60vh",
+  padding: "10rem 1.25rem 5rem",
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
+  backgroundImage: "url('/chum03.PNG')",
+  backgroundSize: "cover",
+  backgroundPosition: "center",
+  backgroundRepeat: "no-repeat",
+}}>
         <div className="container-md" style={{ textAlign: "center" }}>
           <span className="eyebrow" style={{ marginBottom: "0.6rem" }}>Chumley's Doghouse</span>
           <h1 style={{ fontFamily: "'Playfair Display', Georgia, serif", fontSize: "clamp(2.5rem, 10vw, 5.5rem)", fontWeight: 900, color: "#f4ead5", lineHeight: 1, margin: "0.5rem 0 1rem" }}>
