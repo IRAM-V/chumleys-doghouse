@@ -25,7 +25,9 @@ export default function MenuClient() {
 
   return (
     <>
-      <div style={{ padding: "7rem 1.25rem 3rem", background: "linear-gradient(180deg, #0e0c09 0%, #221f1a 100%)", position: "relative" }}>
+      <div style={{ backgroundImage: "url('/chum01.PNG')",
+backgroundSize: "cover",
+backgroundPosition: "center", }}>
         <div className="container-md" style={{ textAlign: "center" }}>
           <span className="eyebrow" style={{ marginBottom: "0.6rem" }}>Chumley's Doghouse</span>
           <h1 style={{ fontFamily: "'Playfair Display', Georgia, serif", fontSize: "clamp(2.5rem, 10vw, 5.5rem)", fontWeight: 900, color: "#f4ead5", lineHeight: 1, margin: "0.5rem 0 1rem" }}>
@@ -37,9 +39,7 @@ export default function MenuClient() {
         </div>
       </div>
 
-      <div style={{ backgroundImage: "url('/chum01.PNG')",
-backgroundSize: "cover",
-backgroundPosition: "center", }}>
+      <div style={{ background: "#1a1714", padding: "1.5rem 1.25rem", borderBottom: "1px solid rgba(139,94,60,0.2)" }}>
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(120px, 1fr))", gap: "0.6rem", maxWidth: 1200, margin: "0 auto" }}>
           {tabs.map(tab => {
             const isActive = active === tab.id;
