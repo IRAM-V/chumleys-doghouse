@@ -37,7 +37,9 @@ export default function MenuClient() {
         </div>
       </div>
 
-      <div style={{ background: "#1a1714", padding: "1.5rem 1.25rem", borderBottom: "1px solid rgba(139,94,60,0.2)" }}>
+      <div style={{ backgroundImage: "url('/chum01.PNG')",
+backgroundSize: "cover",
+backgroundPosition: "center", }}>
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(120px, 1fr))", gap: "0.6rem", maxWidth: 1200, margin: "0 auto" }}>
           {tabs.map(tab => {
             const isActive = active === tab.id;
