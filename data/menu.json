@@ -1,0 +1,74 @@
+{
+  "sections": [
+    {
+      "id": "hot-dogs",
+      "title": "Hot Dogs",
+      "emoji": "🌭",
+      "description": "Hand-crafted dogs with bold Indiana flavors",
+      "items": [
+        { "id": "chili-dog", "name": "Chili Dog", "description": "Our signature house chili, cheddar, diced white onion, yellow mustard on a toasted brioche bun", "price": 8.50, "tags": ["fan favorite"] },
+        { "id": "the-owen", "name": "The Owen", "description": "Cream cheese, jalapeño bacon jam, sriracha drizzle — named after the pup that started it all", "price": 9.00, "tags": ["spicy", "signature"] },
+        { "id": "low-country", "name": "Low Country", "description": "Pimento cheese, crispy shallots, sweet pickle relish, Carolina gold mustard sauce", "price": 9.00, "tags": [] },
+        { "id": "all-american", "name": "All American", "description": "Classic yellow mustard, ketchup, sweet relish, sport peppers, celery salt — Chicago-style done right", "price": 7.50, "tags": ["classic"] },
+        { "id": "faxy-dog", "name": "Faxy Dog", "description": "Avocado smash, everything bagel seasoning, pickled red onion, cucumber ribbons", "price": 9.50, "tags": ["fresh"] }
+      ]
+    },
+    {
+      "id": "sides",
+      "title": "Sides",
+      "emoji": "🥗",
+      "description": "Made fresh daily",
+      "items": [
+        { "id": "coleslaw", "name": "Creamy Coleslaw", "description": "House-made with apple cider vinegar and a touch of celery seed", "price": 3.00, "tags": [] },
+        { "id": "kettle-chips", "name": "Kettle Chips", "description": "Local Indiana kettle chips, sea salt & cracked pepper", "price": 2.50, "tags": [] },
+        { "id": "oyster-crackers", "name": "Oyster Crackers", "description": "Seasoned with ranch and dill, baked in-house", "price": 2.00, "tags": [] },
+        { "id": "apple-sauce", "name": "Apple Sauce", "description": "Slow-cooked Indiana orchard apples, lightly spiced with cinnamon", "price": 2.50, "tags": [] }
+      ]
+    },
+    {
+      "id": "sweets",
+      "title": "Sweets",
+      "emoji": "🍦",
+      "description": "Local Indiana confections",
+      "items": [
+        { "id": "zaharakos", "name": "Zaharako's Ice Cream", "description": "Legendary Columbus, Indiana ice cream. Ask your server for today's scoops", "price": 5.00, "tags": ["local legend"] },
+        { "id": "scoopy-snacks", "name": "Scoopy Snacks", "description": "Rotating seasonal dessert bites — ask what's fresh today", "price": 4.00, "tags": [] }
+      ]
+    },
+    {
+      "id": "on-tap",
+      "title": "On Tap",
+      "emoji": "🍺",
+      "description": "Indiana craft beers, rotating selection",
+      "items": [
+        { "id": "hog-molly", "name": "Hog Molly", "description": "Smooth Indiana amber ale with notes of caramel and toasted malt", "price": 6.00, "tags": ["local"] },
+        { "id": "upland", "name": "Upland Brewing Co.", "description": "Bloomington, IN — rotating seasonal taps from one of Indiana's finest", "price": 6.50, "tags": ["craft"] },
+        { "id": "zwanzigz", "name": "ZwanzigZ Pizza & Brewing", "description": "Columbus, IN — bold flavors from our neighbors down the road", "price": 6.00, "tags": ["local"] },
+        { "id": "450-north", "name": "450 North Brewing Co.", "description": "Columbus, IN — slushies, sours, and everything in between", "price": 7.00, "tags": ["craft", "local"] }
+      ]
+    },
+    {
+      "id": "wines",
+      "title": "Wines",
+      "emoji": "🍷",
+      "description": "Curated selections to complement your meal",
+      "items": [
+        { "id": "house-red", "name": "House Red", "description": "Ask your server for today's pour", "price": 7.00, "tags": [] },
+        { "id": "house-white", "name": "House White", "description": "Ask your server for today's pour", "price": 7.00, "tags": [] },
+        { "id": "rose", "name": "Rosé", "description": "Light, crisp, and refreshing", "price": 7.50, "tags": [] }
+      ]
+    },
+    {
+      "id": "non-alcoholic",
+      "title": "Non-Alcoholic",
+      "emoji": "🥤",
+      "description": "Refreshing options for everyone",
+      "items": [
+        { "id": "sweet-tea", "name": "Sweet Tea", "description": "Indiana-style, brewed fresh daily", "price": 2.50, "tags": [] },
+        { "id": "lemonade", "name": "Fresh Lemonade", "description": "Hand-squeezed with a hint of mint", "price": 3.00, "tags": [] },
+        { "id": "craft-soda", "name": "Craft Soda", "description": "Rotating local Indiana craft sodas", "price": 3.00, "tags": ["local"] },
+        { "id": "water", "name": "Sparkling or Still Water", "description": "Because hydration matters", "price": 2.00, "tags": [] }
+      ]
+    }
+  ]
+}

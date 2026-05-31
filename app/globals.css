@@ -1,0 +1,135 @@
+@import "tailwindcss";
+
+:root {
+  --charcoal:   #1a1714;
+  --charcoal-2: #221f1a;
+  --charcoal-3: #2d2820;
+  --charcoal-4: #3a342a;
+  --wood:       #8b5e3c;
+  --wood-light: #b07d52;
+  --gold:       #c8922a;
+  --gold-light: #e0a83a;
+  --cream:      #f4ead5;
+  --bone:       #e8d5b0;
+  --muted:      #9a8570;
+  --muted-2:    #6b5a45;
+}
+
+/* ── Reset ── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+/* ── Base ── */
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background-color: var(--charcoal);
+  color: var(--cream);
+  font-family: Georgia, 'Times New Roman', serif;
+  overflow-x: hidden;
+  overflow-y: auto;
+  min-height: 100vh;
+  width: 100%;
+}
+
+/* ── Grain – pointer-events:none, z-index behind everything ── */
+body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 9998;
+}
+
+/* ── Typography ── */
+.font-display { font-family: 'Playfair Display', Georgia, 'Times New Roman', serif; }
+.font-sans    { font-family: 'Lato', 'Trebuchet MS', Arial, sans-serif; }
+
+/* ── Eyebrow label ── */
+.eyebrow {
+  display: block;
+  font-family: 'Lato', Arial, sans-serif;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+
+/* ── Buttons ── */
+.btn-gold {
+  display: inline-block;
+  background: var(--gold);
+  color: var(--charcoal);
+  font-family: 'Lato', Arial, sans-serif;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  padding: 0.9rem 2rem;
+  border: 2px solid var(--gold);
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.2s, transform 0.15s;
+  white-space: nowrap;
+}
+.btn-gold:hover  { background: var(--gold-light); border-color: var(--gold-light); transform: translateY(-2px); }
+
+.btn-outline {
+  display: inline-block;
+  background: transparent;
+  color: var(--gold);
+  font-family: 'Lato', Arial, sans-serif;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  padding: 0.9rem 2rem;
+  border: 2px solid var(--gold);
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.2s, transform 0.15s;
+  white-space: nowrap;
+}
+.btn-outline:hover { background: rgba(200,146,42,0.12); transform: translateY(-2px); }
+
+/* ── Card ── */
+.card {
+  background: var(--charcoal-3);
+  border: 1px solid rgba(139,94,60,0.2);
+  transition: border-color 0.25s, transform 0.25s;
+}
+.card:hover { border-color: rgba(200,146,42,0.4); transform: translateY(-3px); }
+
+/* ── Layout containers ── */
+.container-xl  { max-width: 1200px; margin: 0 auto; width: 100%; }
+.container-lg  { max-width:  960px; margin: 0 auto; width: 100%; }
+.container-md  { max-width:  720px; margin: 0 auto; width: 100%; }
+
+/* ── Section padding – mobile first ── */
+.section-pad { padding: 4rem 1.25rem; }
+@media (min-width: 640px)  { .section-pad { padding: 5rem 1.5rem; } }
+@media (min-width: 1024px) { .section-pad { padding: 7rem 2rem;   } }
+
+/* ── Two-column grid helper ── */
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+}
+@media (min-width: 768px) { .grid-2 { grid-template-columns: 1fr 1fr; gap: 4rem; } }
+
+/* ── Footer link hover ── */
+.footer-link { font-family: 'Lato', sans-serif; color: var(--muted-2); font-size: 0.875rem; text-decoration: none; font-weight: 300; transition: color 0.2s; }
+.footer-link:hover { color: var(--gold); }
+.footer-social { font-family: 'Lato', sans-serif; color: var(--muted-2); font-size: 0.875rem; text-decoration: none; font-weight: 300; transition: color 0.2s; }
+.footer-social:hover { color: var(--gold); }
+
+/* ── Scrollbar ── */
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: var(--charcoal); }
+::-webkit-scrollbar-thumb { background: var(--wood); border-radius: 3px; }
+::selection { background: var(--gold); color: var(--charcoal); }
